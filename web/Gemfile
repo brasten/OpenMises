@@ -1,0 +1,58 @@
+# dependencies are generated using a strict version, don't forget to edit the gem versions when upgrading.
+merb_gems_version = "1.1.0.pre"
+dm_gems_version   = "0.10.2"
+do_gems_version   = "0.10.1"
+
+bundle_path "gems"
+
+gem "bundler"
+# For more information about each component, please read http://wiki.merbivore.com/faqs/merb_components
+
+gem "abstract"
+gem "merb", merb_gems_version, :git => "git://github.com/merb/merb.git"
+gem "merb-core", merb_gems_version
+gem "merb-action-args", merb_gems_version
+gem "merb-assets", merb_gems_version
+gem "merb-cache", merb_gems_version
+gem "merb-helpers", merb_gems_version
+gem "merb-mailer", merb_gems_version
+gem "merb-slices", merb_gems_version
+gem "merb-auth-core", merb_gems_version
+gem "merb-auth-more", merb_gems_version
+gem "merb-auth-slice-password", merb_gems_version
+gem "merb-param-protection", merb_gems_version
+gem "merb-exceptions", merb_gems_version
+gem "merb-gen", merb_gems_version
+
+gem "data_objects", do_gems_version
+gem "do_sqlite3", do_gems_version # If using another database, replace this
+gem "dm-core", dm_gems_version         
+gem "dm-aggregates", dm_gems_version   
+gem "dm-migrations", dm_gems_version   
+gem "dm-timestamps", dm_gems_version   
+gem "dm-types", dm_gems_version        
+gem "dm-validations", dm_gems_version  
+gem "dm-serializer", dm_gems_version   
+gem "merb_datamapper", merb_gems_version
+gem "thin"
+
+
+# Add http://gems.github.com as a source that the bundler will use
+# to find gems listed in the manifest. By default,
+# http://gems.rubyforge.org is already added to the list.
+#
+# This is an optional setting.
+source "http://gems.github.com"
+source "http://edge.merbivore.com"
+source "http://gemcutter.org"
+
+
+# Specify that rubygems should be completely disabled. This means that it
+# will be impossible to require it and that available gems will be
+# limited exclusively to gems that have been bundled.
+#
+# The default is to automatically require rubygems. There is also a
+# `disable_system_gems` option that will limit available rubygems to
+# the ones that have been bundled.
+# disable_system_gems
+# disable_rubygems

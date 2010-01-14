@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <title>Ludwig von Mises Institute</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="verify-v1" content="bZ1yK0pF6f/pZbzirh6mkJxL0M14e+8LEtaMWnXohXQ=">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <%= css_include_tag :master %>
+    <link href="/opensearch.xml" rel="search" type="application/opensearchdescription+xml" />
+  </head>
+  
+  <body class="wideside">
+
+    <ol id="accessibility-menu">
+        <li><a href="#navigation">Skip to navigation</a></li>
+        <li><a href="#content">Skip to content</a></li>
+        <li><a href="#sidebar">Skip to sidebar</a></li>
+        <!-- /accessibility menu -->
+    </ol>
+    <div id="header">
+        <div class="container">
+            <h1 class="logo"><a href="/">Ludwig von Mises Institute</a></h1>
+
+            <p class="title">
+                Ludwig von Mises Institute <em>- Tu Ne Cede Malis</em><span></span>
+            </p>
+            <p class="tagline">
+                Advancing the scholarship of liberty in the tradition of the Austrian School.<span></span>
+            </p>
+            <ul class="usernav">
+              <p>LOGIN-VIEW</p>
+                <!-- <asp:LoginView ID="LoginView1" runat="server">
+                    <LoggedInTemplate>
+                        <li class="first"><asp:HyperLink runat="server" NavigateUrl="~/MyMises/">
+                            <asp:LoginName ID="LoginName1" runat="server" />
+                        </asp:HyperLink></li>
+                        <li><asp:HyperLink runat="server" NavigateUrl="~/mymises/">My Mises</asp:HyperLink></li>
+                    </LoggedInTemplate>
+                    <AnonymousTemplate>
+                        <li class="first"><asp:HyperLink runat="server" NavigateUrl="~/Community/user/CreateUser.aspx?ReturnUrl=">
+                            Register</asp:HyperLink></li>
+                    </AnonymousTemplate>
+                </asp:LoginView> -->
+              <li>
+                LOGIN-STATUS
+                <!-- <asp:LoginStatus ID="LoginStatus1" runat="server" LoginText="Sign in" LogoutText="Sign Out" /> -->
+              </li>
+            </ul>
+            <ul id="navigation">
+                <li id="lnkHome"><%= link_to 'Home', '/' %></li>
+                <li id="lnkAbout"><%= link_to 'About', '/about.html' %></li>
+                <li id="lnkArticles"><%= link_to 'Daily', '/daily.html' %></li>
+                <!-- TODO: FIX to relative URL -->
+                <li id="lnkBlog"><%= link_to 'Blog', "http://blog.mises.org/blog/" %></li>
+                <li id="lnkLiterature"><%= link_to 'Literature', '/literature '%></li>
+                <li id="lnkMedia"><%= link_to 'Media', '' %></li>
+                <li id="lnkEvents"><%= link_to 'Events', '' %></li>
+                <li id="l-stor"><%= link_to 'Store', '' %></li>
+                <li id="l-comu"><%= link_to 'Community', '' %></li>
+                <li class="l-dona"><%= link_to 'Donate', '' %></li>
+                <li class="l-edit" id="editLink" visible="false"></li>
+                <li class="l-manage" id="manageLink" visible="false"></li>
+            </ul>
+            <!-- / .container -->
+        </div>
+        <!-- /header -->
+    </div>
+    <hr />
+    <div class="container main">
+      CONTENT_PLACEHOLDER
+        <!-- / .container -->
+    </div>
+    <hr />
+    <div id="footer">
+        <div class="container">
+            <div class="box">
+                <p>
+                    <a title="LvMI Home Page" href=".">Ludwig von Mises Institute</a>
+                    <span>&middot;</span> 518 West Magnolia Avenue <span>&middot;</span> Auburn, Alabama
+                    36832-4528
+                </p>
+                <p>
+                    Phone: 334.321.2100 <span>&middot;</span> Fax: 334.321.2119</p>
+                <p>
+                    <a title="Comments and Questions about the Mises Institute" href="mailto:&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#109;&#105;&#115;&#101;&#115;&#046;&#111;&#114;&#103;">
+                        contact@mises.org</a> <span>&middot;</span> <a title="Comments and questions about Mises.org"
+                            href="mailto:&#119;&#101;&#098;&#109;&#097;&#115;&#116;&#101;&#114;&#064;&#109;&#105;&#115;&#101;&#115;&#046;&#111;&#114;&#103;?subject=Comment about the website">
+                            webmaster</a><span>&middot;</span>
+                    <a href="#" onclick="window.open('/MyMises/EditFavorite.aspx?url=' + escape(self.location) + '&amp;title=' + escape(document.title),'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0');">Save to MyMises</a>
+                </p>
+                <p>
+                    <a href="/sitemap.aspx" rel="directory">mises.org sitemap</a> &middot; <a href="http://validator.w3.org/check?uri=referer">
+                        <img src="/Theme/images/ico/valid-xhtml10.png" alt="Valid XHTML 1.0 Transitional"
+                            height="31" width="88" /></a> &middot; <a title="Unless otherwise noted, content on this site is published under Creative Commons Attribution 3.0 United States License."
+                                rel="license" href="http://creativecommons.org/licenses/by/3.0/us/">
+                                <img alt="" src="/Theme/images/ico/cc-by88x31.png" /></a>  &middot; <a href="http://www.facebook.com/mises.institute" title="LvMI on Facebook"><img src="/Theme/images/ico/facebook88x31.png" alt="LvMI on Facebook" width="88" height="31"/></a>
+                </p>
+                <!-- / .box -->
+            </div>
+            <!-- / .container -->
+        </div>
+        <!-- /footer -->
+    </div>
+    </form>
+</body>
+</html>
